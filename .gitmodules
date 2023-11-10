@@ -1,0 +1,6 @@
+[submodule "src/llm/llama.cpp/ggml"]
+	path = src/llm/llama.cpp/ggml
+	url = https://github.com/ggerganov/llama.cpp.git
+	branch = master-9e232fo
+	ignore = dirty
+    shallow = true
