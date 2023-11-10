@@ -4,3 +4,7 @@
 	branch = master-9e232fo
 	ignore = dirty
     shallow = true
+[submodule "src/llm/llama.cpp/gguf"]
+	path = src/llm/llama.cpp/gguf
+	url = https://github.com/ggerganov/llama.cpp.git
+	branch = master-b1f4290
