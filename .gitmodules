@@ -8,3 +8,5 @@
 	path = src/llm/llama.cpp/gguf
 	url = https://github.com/ggerganov/llama.cpp.git
 	branch = master-b1f4290
+	ignore = dirty
+    shallow = true
