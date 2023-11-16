@@ -60,14 +60,15 @@ fn main() {
     }
 
     // Run the build_shell_script file
-    Command::new(shell_script_file_path)
-        .current_dir(working_directory.clone()) // Set the working directory
+    Command::new(&shell_script_file_path)
+        .current_dir(working_directory) // Set the working directory
         .status()
         .unwrap();
 
+    // Tell Cargo that if the given file changes, to rerun this build script
     println!(
         "cargo:rerun-if-changed={}",
-        working_directory.to_string_lossy()
+        shell_script_file_path.to_string_lossy()
     );
 }
 
